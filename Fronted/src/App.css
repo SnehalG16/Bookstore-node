@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Form Styling */
+form {
+  width: 350px;
+  margin: 5% auto;
+  background-color: #f4f4f9; /* Light, neutral background */
+  padding: 40px 30px; /* Increased padding for better spacing */
+  border-radius: 12px; /* Slightly rounder corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a more modern look */
+}
+
+/* Form Inputs */
+form input {
+  height: 40px;
+  width: 100%;
+  display: block;
+  margin: 15px 0; /* Increased margin for better spacing */
+  border-radius: 8px; /* Soft rounded corners */
+  padding-left: 20px;
+  font-size: 16px; /* Slightly larger font for better readability */
+  border: 1px solid #ddd; /* Soft border */
+  background-color: #fff; /* White background for inputs */
+  transition: all 0.3s ease-in-out; /* Smooth transition on focus */
+}
+
+form input:focus {
+  border-color: #a7a7ff; /* Focus border color */
+  outline: none; /* Remove default outline */
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: #3f7dbd; /* Soft blue for links */
+  font-weight: 500; /* Slightly bolder links */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a7a7ff; /* Hover color matching input focus */
+}
+
+/* Product Grid Styling */
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Add space between grid items */
+  margin-top: 2%;
+}
+
+/* Button Styling */
+button {
+  height: 40px;
+  width: 80%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #3f7dbd; /* Soft blue background for buttons */
+  color: white; /* White text color */
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #365f9e; /* Darker shade of blue on hover */
+  transform: translateY(-2px); /* Slight elevation effect on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .product {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+
+  form {
+    width: 100%; /* Full width for form on smaller screens */
+    padding: 20px; /* Reduce padding on small screens */
+  }
+}
